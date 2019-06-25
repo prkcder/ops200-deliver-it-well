@@ -43,7 +43,7 @@ describe('server/app.js', function() {
       .get('/')
       .end((err, res) => {
         expect(err).not.exist;
-        expect(JSON.stringify(res.text)).to.contain('one life and one death');
+        expect(JSON.stringify(res.text)).to.contain('Ihave but one life and one death');
         done();
       });
     });
