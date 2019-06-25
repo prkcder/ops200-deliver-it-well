@@ -38,12 +38,12 @@ describe('server/app.js', function() {
     });
   });
 
-  it('page says hello world', (done) => {
+  it('page says I have but one life and one death', (done) => {
     chai.request(server)
       .get('/')
       .end((err, res) => {
         expect(err).not.exist;
-        expect(JSON.stringify(res.text)).to.contain('Ihave but one life and one death');
+        expect(JSON.stringify(res.text)).to.contain('I have but one life and one death');
         done();
       });
     });
